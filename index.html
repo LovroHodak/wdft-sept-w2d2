@@ -4,24 +4,49 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DOM intro, selectors and manipulation</title>
+    <link rel="stylesheet" href="style.css" >
   </head>
 
   <body>
-    <h1 id="title1">Primary title</h1>
-    <h2 id="title2">Secondary title</h2>
-
-    <p class="paragraph">Here is some text in the first paragraph.</p>
-    <p class="paragraph">
-      And here is some other text in the second paragraph.
-    </p>
-    <p class="paragraph">However, there is the third paragraph as well.</p>
-
-    <h5 class="subtitle">Oh, subtitle I am!</h5>
-
-    <section class="products">
-      <h2 class="title2" id="products">Products</h2>
-    </section>
+    <div id="container">
+      <h1 >Fruits and veggies</h1>
+      <form id="my-form">
+          <input id="fruit-input" type="text" >
+          <input type="submit" value="Add" >
+      </form>
+      <div class="list-fruits">
+        <h2 >Fruits</h2>
+        <ul class="fruits">
+          <li class="fruit-item">
+            Pear
+            <button class="delete-btn">Delete</button>
+          </li>
+          <li class="fruit-item">
+            Strawberry
+            <button class="delete-btn">Delete</button>
+          </li>
+          <li class="fruit-item">
+            Plum
+            <button class="delete-btn">Delete</button>
+          </li>
+          <li class="fruit-item">
+            Grapes
+            <button class="delete-btn">Delete</button>
+          </li>
+        </ul>
+      </div>
+      <div class="list-veggies">
+        <h2>Veggies</h2>
+        <ul class="veggies">
+          <li class="veggie-item">Broccoli</li>
+          <li class="veggie-item">Celery</li>
+          <li class="veggie-item">Potato</li>
+          <li class="veggie-item">Spinach</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- load JS file last when DOM already loaded so you can access and manipulate with the DOM elements -->
+    <script src="script.js" ></script>
   </body>
 </html>
